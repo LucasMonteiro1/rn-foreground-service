@@ -1,9 +1,9 @@
 {
-  "name": "@supersami/rn-foreground-service",
-  "version": "1.0.4",
+  "name": "@ms-v3/rn-foreground-service",
+  "version": "x.x.x",
   "description": "A Foreground Service for React Native",
   "main": "index.js",
-  "repository": "Raja0sama/rn-foreground-service",
+  "repository": "LucasMonteiro1/rn-foreground-service",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,10 +16,6 @@
     "service",
     "background"
   ],
-  "author": {
-    "name": "Raja Osama (supersami)"
-  },
-  "license": "MIT",
   "peerDependencies": {
     "react-native": ">=0.59.0"
   }

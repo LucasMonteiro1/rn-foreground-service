@@ -1,8 +1,7 @@
-# @supersami/rn-foreground-service 🤟
+# @ms-v3/rn-foreground-service 🤟
 
-> A foreground service with headless task that can manage multiple headless tasks execution at the same time and handle interactions. 🎉
-
-_Looking for a contributors._
+## Disclaimer
+This package is being published out of necessity until the changes contained in it are published in the original library.
 
 ![react-browser-tab](https://miro.medium.com/max/1728/1*5ktY8XkS5a5iM6LsLOP7jw.png)
 [DEMO](https://github.com/Raja0sama/ForegroundSerivceExample)
@@ -11,18 +10,12 @@ _Looking for a contributors._
 
 If you want a foreground service in react native, RN-foreground-service is the way to go. This plugin handels Headless task, multiple task, notification customization, and notification interactions.
 
-[![NPM](https://img.shields.io/npm/v/@supersami/rn-foreground-service.svg)](https://www.npmjs.com/package/@supersami/rn-foreground-service) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/@ms-v3/rn-foreground-service.svg)](https://www.npmjs.com/package/@ms-v3/rn-foreground-service) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
 ```bash
-npm i @supersami/rn-foreground-service
-```
-
-or
-
-```bash
-yarn add @supersami/rn-foreground-service
+yarn add @ms-v3/rn-foreground-service
 ```
 
 ### Update Native Files
@@ -145,7 +138,7 @@ index.js
 
 ```js
 // Import the library
-import ReactNativeForegroundService from '@supersami/rn-foreground-service';
+import ReactNativeForegroundService from '@ms-v3/rn-foreground-service';
 import { AppRegistry } from 'react-native';
 import { name as appName } from './app.json';
 import App from './src/App.tsx';
