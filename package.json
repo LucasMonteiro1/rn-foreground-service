@@ -1,6 +1,6 @@
 {
   "name": "@ms-v3/rn-foreground-service",
-  "version": "x.x.x",
+  "version": "0.0.1",
   "description": "A Foreground Service for React Native",
   "main": "index.js",
   "repository": "LucasMonteiro1/rn-foreground-service",
