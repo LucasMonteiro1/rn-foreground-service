@@ -132,9 +132,7 @@ class NotificationHelper {
 
         notificationBuilder.setStyle(new NotificationCompat.BigTextStyle().bigText(bundle.getString("message")));
 
-        // Using static icon instead bundle.getString("icon")
-        String iconName = "ic_small";
-        
+        String iconName = bundle.getString("icon");
         if(iconName == null){
             iconName = "ic_notification";
         }
