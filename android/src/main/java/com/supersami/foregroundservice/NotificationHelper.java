@@ -124,7 +124,8 @@ class NotificationHelper {
             .setPriority(priority)
             .setContentIntent(pendingIntent)
             .setOngoing(bundle.getBoolean("ongoing", false))
-            .setContentText(bundle.getString("message"));
+            .setContentText(bundle.getString("message"))
+            .setCategory(Notification.CATEGORY_SERVICE);
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             notificationBuilder.setColor(this.config.getNotificationColor());
@@ -226,9 +227,9 @@ class NotificationHelper {
         Log.d("Check ", ""+bundle.getBoolean("vibration"));
         NotificationChannel channel = new NotificationChannel(NOTIFICATION_CHANNEL_ID, this.config.getChannelName(), importance);
         channel.setDescription(this.config.getChannelDescription());
-        channel.enableLights(true);
+        // channel.enableLights(true);
         channel.enableVibration(bundle.getBoolean("vibration"));
-        channel.setShowBadge(true);
+        channel.setShowBadge(false);
 
         manager.createNotificationChannel(channel);
         channelCreated = true;
